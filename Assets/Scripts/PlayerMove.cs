@@ -5,14 +5,15 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField]
     private float Speed = 5.0f;
-
+    
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
+    
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-    }
+    }        
 
     void FixedUpdate()
     {
