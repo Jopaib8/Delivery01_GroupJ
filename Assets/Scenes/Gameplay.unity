@@ -579,10 +579,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WhatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 768
   WhatIsPlatform:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   GroundCheckPoint: {fileID: 1918508236}
   RoofCheckPoint: {fileID: 254180828}
   CurrentPlatform: {fileID: 0}

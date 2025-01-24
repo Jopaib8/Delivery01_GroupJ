@@ -15,7 +15,7 @@ public class PlayerJump : MonoBehaviour
     private CollisionDetection _collisionDetection;
     private float _lastVelocityY;
     private float _jumpStartedTime;
-
+    private int _jumpCount = 0;
 
 
     void Start()
@@ -34,10 +34,14 @@ public class PlayerJump : MonoBehaviour
     // NOTE: InputSystem: "JumpStarted" action becomes "OnJumpStarted" method
     public void OnJumpStarted()
     {
-        SetGravity();
-        var vel = new Vector2(_rigidbody.linearVelocity.x, GetJumpForce());
-        _rigidbody.linearVelocity = vel;
-        _jumpStartedTime = Time.time;
+        if (_jumpCount < 2)
+        {
+            SetGravity();
+            var vel = new Vector2(_rigidbody.linearVelocity.x, GetJumpForce());
+            _rigidbody.linearVelocity = vel;
+            _jumpStartedTime = Time.time;
+            _jumpCount++;
+        }
     }
 
     // NOTE: InputSystem: "JumpFinished" action becomes "OnJumpFinished" method
@@ -89,5 +93,10 @@ public class PlayerJump : MonoBehaviour
         Physics2D.Raycast(transform.position, Vector2.down, filter, hit, 10);
 
         return hit[0].distance;
+    }
+
+    public void ResetJump()
+    {
+        _jumpCount = 0;
     }
 }

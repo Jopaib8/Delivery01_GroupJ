@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class CollisionDetection : MonoBehaviour
@@ -75,7 +76,12 @@ public class CollisionDetection : MonoBehaviour
 
         _isGrounded = (colliders.Length > 0);
 
-        if (!_wasGrounded && _isGrounded) SendMessage("OnLanding");
+        if (!_wasGrounded && _isGrounded) 
+        {
+           //SendMessage("OnLanding");
+           SendMessage("ResetJump");
+        }
+
         _wasGrounded = _isGrounded;
     }
 
@@ -86,7 +92,12 @@ public class CollisionDetection : MonoBehaviour
         _isPlatformGround = (colliders.Length > 0);
         if (_isPlatformGround) CurrentPlatform = colliders[0].transform;
 
-        if (!_wasGrounded && _isGrounded) SendMessage("OnLanding");
+        if (!_wasGrounded && _isGrounded)
+        {
+            //SendMessage("OnLanding");
+            SendMessage("ResetJump");
+ 
+        }
         _wasGrounded = _isGrounded;
     }
 
