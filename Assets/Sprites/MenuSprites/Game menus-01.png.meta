@@ -759,7 +759,33 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Game menus-01_0: -8695019518180747640
+      Game menus-01_1: -5498862123917758686
+      Game menus-01_10: 1909123370283302068
+      Game menus-01_11: 5524916671227370950
+      Game menus-01_12: 913455500008507165
+      Game menus-01_13: 1878697164425031298
+      Game menus-01_14: -7586730417050394904
+      Game menus-01_15: 7333328377138150507
+      Game menus-01_16: -4523127158033624694
+      Game menus-01_17: -9221038084876927852
+      Game menus-01_18: -4731676566939183873
+      Game menus-01_19: 3643219930110889761
+      Game menus-01_2: -7554075446997645883
+      Game menus-01_20: 755790775473568543
+      Game menus-01_21: -5624324831715780777
+      Game menus-01_22: 4265669771838044225
+      Game menus-01_23: 6797456279224918918
+      Game menus-01_24: -3425186860413769907
+      Game menus-01_25: -2919783663108278299
+      Game menus-01_3: 2987741577802746433
+      Game menus-01_4: -7663131971234295003
+      Game menus-01_5: 4779121324623481196
+      Game menus-01_6: -7210693652490964067
+      Game menus-01_7: -7901348075571992770
+      Game menus-01_8: 355905480881223253
+      Game menus-01_9: 3973412856894608032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
