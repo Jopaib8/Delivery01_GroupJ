@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6905268e66cb86a4589ab900e8c93daa
+guid: 53a99b0a71ea10c4e9ecfb175ee70964
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -855298285791758126
-    second: 1_0
+      213: -6818046926579225473
+    second: Silver Coin_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1_0
+      name: Silver Coin_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 401
-        width: 1920
-        height: 614
+        x: 2
+        y: 2
+        width: 28
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d8b16a9dbe5124f0800000000000000
-      internalID: -855298285791758126
+      spriteID: f7c2d4f917e6161a0800000000000000
+      internalID: -6818046926579225473
       vertices: []
       indices: 
       edges: []
