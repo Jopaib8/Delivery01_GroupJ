@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1facdf4fc4e6c3d478d3fb6a4bbd9e95
+guid: fb9560089ee351d48aeb33459bb3345e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6470460504253458178
-    second: 3_0
+      213: 5293031974318352618
+    second: Crystal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3_0
+      name: Crystal_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 83
-        width: 1920
-        height: 968
+        x: 1
+        y: 1
+        width: 30
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef817ce047e4436a0800000000000000
-      internalID: -6470460504253458178
+      spriteID: ae8a7067980a47940800000000000000
+      internalID: 5293031974318352618
       vertices: []
       indices: 
       edges: []
