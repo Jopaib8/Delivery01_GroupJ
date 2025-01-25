@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FASE 2 SITTING IDLE-Sheet_0: -6166656558600310925
+      FASE 2 SITTING IDLE-Sheet_1: -3262619421405266284
+      FASE 2 SITTING IDLE-Sheet_2: -8768408981568705200
+      FASE 2 SITTING IDLE-Sheet_3: 8278360061754658569
+      FASE 2 SITTING IDLE-Sheet_4: 8356468503513683196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

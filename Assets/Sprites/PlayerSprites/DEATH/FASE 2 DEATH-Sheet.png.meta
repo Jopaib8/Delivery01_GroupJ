@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FASE 2 DEATH-Sheet_0: -5223196681484094499
+      FASE 2 DEATH-Sheet_1: 5067376440750065821
+      FASE 2 DEATH-Sheet_2: -4402402210920231041
+      FASE 2 DEATH-Sheet_3: 1393712797286070485
+      FASE 2 DEATH-Sheet_4: 3035719739025326322
+      FASE 2 DEATH-Sheet_5: 778101186536895204
+      FASE 2 DEATH-Sheet_6: 4554173480927218328
+      FASE 2 DEATH-Sheet_7: 1810494420613024733
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

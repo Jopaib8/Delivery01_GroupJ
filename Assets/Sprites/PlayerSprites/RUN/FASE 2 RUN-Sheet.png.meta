@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FASE 2 RUN-Sheet_0: -6294842010687810036
+      FASE 2 RUN-Sheet_1: -7590005376482813935
+      FASE 2 RUN-Sheet_2: -3010722573779429131
+      FASE 2 RUN-Sheet_3: 463552175440903577
+      FASE 2 RUN-Sheet_4: 2291807027080949998
+      FASE 2 RUN-Sheet_5: -3877250616730804836
+      FASE 2 RUN-Sheet_6: -6155041712603810283
+      FASE 2 RUN-Sheet_7: -8646064411033173888
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
