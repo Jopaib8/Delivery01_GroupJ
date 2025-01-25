@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49a45c503d1714d41be48c647f0b1f6a
+guid: d2f435e3894680140a478a5476fa3bce
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Eagle Lake
+  - Jacquard 24
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

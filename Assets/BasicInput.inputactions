@@ -175,9 +175,18 @@
             "id": "859790c2-e08b-4e07-b02e-cf592191654f",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Exit",
                     "type": "Button",
                     "id": "3aab717e-ada1-46e7-8e55-d0b429b14d7b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Start",
+                    "type": "Button",
+                    "id": "9a75ff01-1553-40ea-aba5-9ced5d22196a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -188,11 +197,22 @@
                 {
                     "name": "",
                     "id": "f465dfa5-bda3-4532-9fd2-c86815b15335",
-                    "path": "",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33ee7c26-4c9e-4a1c-bee1-c49199c3bc76",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
