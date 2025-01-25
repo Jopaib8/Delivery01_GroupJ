@@ -39,7 +39,7 @@ public class PlayerJump : MonoBehaviour
             SetGravity();
             var vel = new Vector2(_rigidbody.linearVelocity.x, GetJumpForce());
             _rigidbody.linearVelocity = vel;
-            _jumpStartedTime = Time.time;
+            _jumpStartedTime = Time.time;   
             _jumpCount++;
         }
     }
@@ -63,6 +63,7 @@ public class PlayerJump : MonoBehaviour
 
     private bool IsPeakReached()
     {
+        _rigidbody.gravityScale = 3f;
         bool reached = ((_lastVelocityY * _rigidbody.linearVelocity.y) < 0);
         _lastVelocityY = _rigidbody.linearVelocity.y;
 
@@ -97,6 +98,7 @@ public class PlayerJump : MonoBehaviour
 
     public void ResetJump()
     {
+        _rigidbody.gravityScale = 1f;
         _jumpCount = 0;
     }
 }
