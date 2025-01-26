@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -18,18 +19,10 @@ public class CameraMovement : MonoBehaviour
         offset = transform.position - player.position;
     }
 
-    void LateUpdate()
-    {
-        if (player != null)
+        void Update()
         {
-            // Calcula la posición deseada de la cámara
-            Vector3 targetPosition = player.position + offset;
-
-            // Suaviza el movimiento de la cámara
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, targetPosition, smoothSpeed);
-
-            // Asigna la nueva posición a la cámara
-            transform.position = smoothedPosition;
+            Vector3 newPos = new Vector3(player.position.x, player.position.y + offset.y, -10f);
+            transform.position = Vector3.Slerp(transform.position, newPos, smoothSpeed * Time.deltaTime);
         }
-    }
+    
 }

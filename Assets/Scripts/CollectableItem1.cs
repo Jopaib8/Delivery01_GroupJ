@@ -10,19 +10,24 @@ public class ColletableItem : MonoBehaviour
     [SerializeField] private AudioClip colect1;
     [SerializeField] private float cantidadPunts;
     [SerializeField] private Score punts;
+    [SerializeField] private AudioClip coin;
+
 
 
 
     // Inicializa el objeto
     private void Awake()
     {
-        //thisobject = GetComponent<GM_Item>();
     }
     // Si el jugador colisiona con el objeto, se destruye y se agrega al inventario
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            coin = collision.GetComponent<AudioClip>();
+
+            
+
             punts.SumaPunts(cantidadPunts);
 
             Debug.Log("Player collided with collectible");

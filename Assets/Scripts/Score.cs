@@ -14,7 +14,7 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
-        textMesh.text = punts.ToString("0");
+        textMesh.text = punts.ToString("Score:0");
     }
 
     public void SumaPunts (float puntsEntrada) { punts += puntsEntrada;}
