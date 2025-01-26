@@ -8,11 +8,13 @@ public class PlayerMove : MonoBehaviour
     
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
+    private Animator _animator;
     
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }        
 
     void FixedUpdate()
@@ -29,5 +31,7 @@ public class PlayerMove : MonoBehaviour
         // type of controls the action is bound to
         var inputVal = value.Get<Vector2>();
         _horizontalDir = inputVal.x;
+
+        _animator.SetFloat("Speed", _horizontalDir);
     }
 }

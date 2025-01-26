@@ -16,12 +16,14 @@ public class PlayerJump : MonoBehaviour
     private float _lastVelocityY;
     private float _jumpStartedTime;
     private int _jumpCount = 0;
+    private Animator _animator;
 
 
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _collisionDetection = GetComponent<CollisionDetection>();
+        _animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -39,7 +41,8 @@ public class PlayerJump : MonoBehaviour
             SetGravity();
             var vel = new Vector2(_rigidbody.linearVelocity.x, GetJumpForce());
             _rigidbody.linearVelocity = vel;
-            _jumpStartedTime = Time.time;   
+            _jumpStartedTime = Time.time;
+            _animator.SetFloat("Impulse", _rigidbody.linearVelocity.y);
             _jumpCount++;
         }
     }
@@ -100,5 +103,6 @@ public class PlayerJump : MonoBehaviour
     {
         _rigidbody.gravityScale = 1f;
         _jumpCount = 0;
+        _animator.SetFloat("Impulse", 0);
     }
 }

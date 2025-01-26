@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Animator animator;
+   /* private Animator animator;
 
     void Start()
     {
@@ -27,5 +27,5 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("Jump");
         }
-    }
+    } */
 }
