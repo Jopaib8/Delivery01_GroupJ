@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
     private float _jumpStartedTime;
     private int _jumpCount = 0;
     private Animator _animator;
-
+    public bool _powerUp = false;
 
     void Start()
     {
@@ -77,7 +77,9 @@ public class PlayerJump : MonoBehaviour
     private void SetGravity()
     {
         var grav = 2 * JumpHeight * (SpeedHorizontal * SpeedHorizontal) / (DistanceToMaxHeight * DistanceToMaxHeight);
-        _rigidbody.gravityScale = grav / 9.81f;
+
+            _rigidbody.gravityScale = grav / 9.81f;
+        
     }
 
     private void TweakGravity()
@@ -86,8 +88,15 @@ public class PlayerJump : MonoBehaviour
     }
 
     private float GetJumpForce()
-    {
-        return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
+    { if (_powerUp)
+        {
+          return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight + 2;
+        }
+        else
+        {
+
+          return 2 * JumpHeight * SpeedHorizontal / DistanceToMaxHeight;
+        }
     }
 
     private float GetDistanceToGround()
@@ -104,5 +113,11 @@ public class PlayerJump : MonoBehaviour
         _rigidbody.gravityScale = 1f;
         _jumpCount = 0;
         _animator.SetFloat("Impulse", 0);
+    }
+    
+    public void ActivatePowerUp()
+    {
+        _powerUp = true;
+        Debug.Log("activado");
     }
 }
