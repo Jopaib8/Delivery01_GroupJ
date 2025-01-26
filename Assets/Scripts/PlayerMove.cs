@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
-    private Animator _animator;
+    public Animator _animator;
     
 
     void Start()
