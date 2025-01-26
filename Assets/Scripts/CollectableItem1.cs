@@ -36,17 +36,17 @@ public class ColletableItem : MonoBehaviour
             {
                 potion = collision.GetComponent<AudioClip>();
                 playerJump.ActivatePowerUp();
-                Debug.Log("h");
             }
                Destroy(gameObject);
-            /*if (SoundController.Instance != null)
+
+            if (SoundController.Instance != null)
             {
-                SoundController.Instance.EjecutarSonido(colect1);
+                SoundController.Instance.PlaySound(colect1);
             }
             else
             {
                 Debug.LogError("SoundController instance is null");
-            }*/
+            }
         }
     }
 }

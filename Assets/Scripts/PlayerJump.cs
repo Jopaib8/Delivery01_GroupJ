@@ -19,6 +19,8 @@ public class PlayerJump : MonoBehaviour
     private Animator _animator;
     public bool _powerUp = false;
 
+    public AudioClip JumpSound;
+
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -44,6 +46,7 @@ public class PlayerJump : MonoBehaviour
             _jumpStartedTime = Time.time;
             _animator.SetFloat("Impulse", _rigidbody.linearVelocity.y);
             _jumpCount++;
+            SoundController.Instance.PlaySound(JumpSound);
         }
     }
 
