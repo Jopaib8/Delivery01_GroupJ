@@ -8,6 +8,9 @@ public class ColletableItem : MonoBehaviour
 
 
     [SerializeField] private AudioClip colect1;
+    [SerializeField] private float cantidadPunts;
+    [SerializeField] private Score punts;
+
 
 
     // Inicializa el objeto
@@ -20,6 +23,8 @@ public class ColletableItem : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            punts.SumaPunts(cantidadPunts);
+
             Debug.Log("Player collided with collectible");
 
             Destroy(gameObject);
