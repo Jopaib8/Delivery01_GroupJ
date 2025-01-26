@@ -1,9 +1,10 @@
 using UnityEngine;
 using TMPro;
 
-public class Score : MonoBehaviour
+public class FinalScore : MonoBehaviour
 {
-    public float points;
+    
+    private Score points;
     private TextMeshProUGUI textMesh;
 
 
@@ -14,8 +15,8 @@ public class Score : MonoBehaviour
 
     private void Update()
     {
-        textMesh.text = points.ToString("Score: 0");
+        textMesh.text =  $"Score: {points}";
     }
 
-    public void SumaPunts (float puntsEntrada) { points += puntsEntrada;}
+    
 }

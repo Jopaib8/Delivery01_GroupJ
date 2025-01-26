@@ -9,7 +9,8 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D _rigidbody;
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
     public Animator _animator;
-    
+    private bool FacingRight = true;
+
 
     void Start()
     {
@@ -19,9 +20,19 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
+
         Vector2 velocity = _rigidbody.linearVelocity;
         velocity.x = _horizontalDir * Speed;
         _rigidbody.linearVelocity = velocity;
+
+        if (_horizontalDir > 0 && !FacingRight)
+        {
+            Flip();
+        }
+        else if (_horizontalDir < 0 && FacingRight)
+        {
+            Flip();
+        }
     }
 
     // NOTE: InputSystem: "move" action becomes "OnMove" method
@@ -33,5 +44,13 @@ public class PlayerMove : MonoBehaviour
         _horizontalDir = inputVal.x;
 
         _animator.SetFloat("Speed", _horizontalDir);
+    }
+
+    public void Flip()
+    {
+        FacingRight = !FacingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 }
