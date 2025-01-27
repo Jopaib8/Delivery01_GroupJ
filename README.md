@@ -25,9 +25,11 @@ _TODO: Show your game to the world, animated GIFs recommended!._
 
 ### Developers
 
- - $(Developer 01) - $(Role/Tasks Developed)
- - $(Developer 02) - $(Role/Tasks Developed)
- - $(Developer 03) - $(Role/Tasks Developed)
+ - Joel Pacheco - (Programer / Project Manager)
+ - Arnau Seguí - (Game Desing / Audio Director / Programer)
+ - Erik Rodriguez - (Programer / Menu Desinger)
+ - Aimar Gomez - (Programer / UI Director)
+ - Aarman Singh - (Art Director)
 
 ### Links
 
@@ -41,4 +43,4 @@ This game sources are licensed under MIT license. Check [LICENSE](LICENSE) for f
 
 $(Additional Licenses)
 
-*Copyright (c) $(Year) $(Developers Names)*
+*Copyright (c) 2025 Joel Pacheco, Arnau Seguí, Erik Rodriguez, Aimar Gomez, Aarman Singh*
