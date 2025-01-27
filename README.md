@@ -3,8 +3,8 @@
 ![Delivery01_GroupJ](Screenshots/Game2.png "Delivery01_GroupJ")
 
 ### Description
- 
-$(Your Game Description)
+
+In Castle Jumper you must get all the coins you can beffor reaching the door, avoid all the spikes and try to score as much as you can!
 
 ### Features
 
