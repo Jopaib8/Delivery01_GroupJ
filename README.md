@@ -1,23 +1,24 @@
-## Delivery 01 - $(Game Title)
+## Delivery 01 - Delivery01_GroupJ
 
-![$(Game Title)](Screenshots/screenshot01.png "$(Game Title)")
+![Delivery01_GroupJ](Screenshots/Game2.png "Delivery01_GroupJ")
 
 ### Description
-
+ 
 $(Your Game Description)
 
 ### Features
 
- - $(Game Feature 01)
- - $(Game Feature 02)
- - $(Game Feature 03)
+ - Jump power-up: Higher jump
+ - Player double jump
+ - Coins pick-up by player
 
 ### Controls
 
 Keyboard:
- - $(Game Control 01)
- - $(Game Control 02)
- - $(Game Control 03)
+ - Keyboard: WASD and Arrow Keys for player movement
+ - Keyboard: SPACE for player jump
+ - Keyboard: ENTER to start/restart game
+ - Keyboard: ESCAPE to exit game and close program
 
 ### Screenshots
 
