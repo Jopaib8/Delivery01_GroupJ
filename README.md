@@ -22,7 +22,7 @@ Keyboard:
 
 ### Screenshots
 
-_TODO: Show your game to the world, animated GIFs recommended!._
+![Delivery01_GroupJ](Screenshots/AnimatedSprite.gif "Delivery01_GroupJ")
 
 ### Developers
 
