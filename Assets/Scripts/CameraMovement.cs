@@ -14,7 +14,6 @@ public class CameraMovement : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
-
         // Calcula el offset inicial en relación con la posición inicial del jugador
         offset = transform.position - player.position;
     }

@@ -58,7 +58,9 @@ public class PlayerJump : MonoBehaviour
         _rigidbody.gravityScale *= fractionOfTimePressed;
     }
 
-    private void OnDrawGizmosSelected()
+   
+
+    /*private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
         float h = -GetDistanceToGround() + JumpHeight;
@@ -67,7 +69,7 @@ public class PlayerJump : MonoBehaviour
         Gizmos.DrawLine(start, end);
         Gizmos.color = Color.white;
     }
-
+     */
     private bool IsPeakReached()
     {
         _rigidbody.gravityScale = 3f;

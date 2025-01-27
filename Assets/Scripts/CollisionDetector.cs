@@ -1,3 +1,4 @@
+
 using System;
 using UnityEngine;
 
@@ -39,14 +40,14 @@ public class CollisionDetection : MonoBehaviour
     [SerializeField]
     private float _groundAngle;
     public float GroundAngle { get { return _groundAngle; } }
-
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(GroundCheckPoint.position, _checkRadius);        
         Gizmos.color = Color.white;
     }
-
+    
     void FixedUpdate()
     {  
 
