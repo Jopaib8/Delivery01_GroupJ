@@ -26,10 +26,10 @@ Keyboard:
 
 ### Developers
 
- - Joel Pacheco - (Programer / Project Manager)
- - Arnau Seguí - (Game Desing / Audio Director / Programer)
- - Erik Rodriguez - (Programer / Menu Desinger)
- - Aimar Gomez - (Programer / UI Director)
+ - Joel Pacheco - (Programmer / Project Manager)
+ - Arnau Seguí - (Game Design / Audio Director / Programmer)
+ - Erik Rodriguez - (Programmer / Menu Designer)
+ - Aimar Gomez - (Programmer / UI Director)
  - Aarman Singh - (Art Director)
 
 ### Links
