@@ -18,5 +18,5 @@ public class Score : MonoBehaviour
         totalPoints = points;
     }
 
-    public void SumaPunts(float puntsEntrada) { points += puntsEntrada; }
+    public void SumaPunts(float puntsEntrada) { points += puntsEntrada; } 
 }
