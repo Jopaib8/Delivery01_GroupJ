@@ -3,8 +3,8 @@ using TMPro;
 
 public class FinalScore : MonoBehaviour
 {
-    
-    private Score points;
+
+
     private TextMeshProUGUI textMesh;
 
 
@@ -15,8 +15,8 @@ public class FinalScore : MonoBehaviour
 
     private void Update()
     {
-        textMesh.text =  $"Score: {points}";
+        textMesh.text = ($"Score: {Score.totalPoints}");
     }
 
-    
+
 }

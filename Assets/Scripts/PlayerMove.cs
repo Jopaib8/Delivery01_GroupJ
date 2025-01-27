@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Processors;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     private float _horizontalDir; // Horizontal move direction value [-1, 1]
     public Animator _animator;
     private bool FacingRight = true;
+    private bool isDead = false;
 
 
     void Start()
@@ -20,18 +22,20 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        Vector2 velocity = _rigidbody.linearVelocity;
-        velocity.x = _horizontalDir * Speed;
-        _rigidbody.linearVelocity = velocity;
-
-        if (_horizontalDir > 0 && !FacingRight)
+        if (!isDead)
         {
-            Flip();
-        }
-        else if (_horizontalDir < 0 && FacingRight)
-        {
-            Flip();
+            Vector2 velocity = _rigidbody.linearVelocity;
+            velocity.x = _horizontalDir * Speed;
+            _rigidbody.linearVelocity = velocity;
+
+            if (_horizontalDir > 0 && !FacingRight)
+            {
+                Flip();
+            }
+            else if (_horizontalDir < 0 && FacingRight)
+            {
+                Flip();
+            }
         }
     }
 
@@ -52,5 +56,10 @@ public class PlayerMove : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    public void BlockOnDie()
+    {
+        isDead = true;
     }
 }

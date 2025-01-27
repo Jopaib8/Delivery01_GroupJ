@@ -5,7 +5,7 @@ public class Score : MonoBehaviour
 {
     public float points;
     private TextMeshProUGUI textMesh;
-
+    public static float totalPoints;
 
     private void Start()
     {
@@ -15,7 +15,8 @@ public class Score : MonoBehaviour
     private void Update()
     {
         textMesh.text = points.ToString("Score: 0");
+        totalPoints = points;
     }
 
-    public void SumaPunts (float puntsEntrada) { points += puntsEntrada;}
+    public void SumaPunts(float puntsEntrada) { points += puntsEntrada; }
 }

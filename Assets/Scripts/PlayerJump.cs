@@ -18,8 +18,9 @@ public class PlayerJump : MonoBehaviour
     private int _jumpCount = 0;
     private Animator _animator;
     public bool _powerUp = false;
-
+    private bool isDead = false;
     public AudioClip JumpSound;
+    
 
     void Start()
     {
@@ -38,7 +39,7 @@ public class PlayerJump : MonoBehaviour
     // NOTE: InputSystem: "JumpStarted" action becomes "OnJumpStarted" method
     public void OnJumpStarted()
     {
-        if (_jumpCount < 2)
+        if (_jumpCount < 2 && !isDead)
         {
             SetGravity();
             var vel = new Vector2(_rigidbody.linearVelocity.x, GetJumpForce());
@@ -122,5 +123,10 @@ public class PlayerJump : MonoBehaviour
     {
         _powerUp = true;
         Debug.Log("activado");
+    }
+
+    public void BlockOnDie()
+    {
+        isDead = true;
     }
 }
